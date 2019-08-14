@@ -16,3 +16,5 @@ def get_sub_domain_name(url):
         return urlparse(url).netloc
     except:
         return ''
+
+#print(get_domain_name('https://psychonautwiki.org/wiki/Main_Page'))
