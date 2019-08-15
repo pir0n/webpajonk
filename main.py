@@ -5,9 +5,9 @@ from domain import *
 from general import *
 
 PROJECT_NAME = ""
-HOMEPAGE = '' # only HTTP
+HOMEPAGE = '' #  HTTPS and HTTP :)
 DOMAIN_NAME = get_domain_name(HOMEPAGE)
-QUEUE_FILE = PROJECT_NAME + " /queue.txt"
+QUEUE_FILE = PROJECT_NAME + "/queue.txt"
 CRAWLED_FILE = PROJECT_NAME + "/crawled.txt"
 NUMBER_OF_THREADS = 8
 queue = Queue()
@@ -47,3 +47,7 @@ def crawl():
     if len(queue_links) > 0:
         print(str(len(queue_links))+ 'links in the queue')
         create_jobs()
+
+
+create_workers()
+crawl()
