@@ -18,3 +18,4 @@ def get_sub_domain_name(url):
         return ''
 
 #print(get_domain_name('https://psychonautwiki.org/wiki/Main_Page'))
+# 1.5Ver
